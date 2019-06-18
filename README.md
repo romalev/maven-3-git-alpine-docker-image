@@ -14,7 +14,7 @@ There is the [maven-release-plugin](https://maven.apache.org/maven-release/maven
 
 So you want to: 
 * utilize _maven-release-plugin_ 
-* to run release jobs by Jenkins agents 
+* and run release job by Jenkins agent 
 * where the entire pipeline, or a specific stage, will get executed within docker container. 
 * how ? 
 
