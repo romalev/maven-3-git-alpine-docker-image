@@ -25,7 +25,7 @@ by _maven-release-plugin_.
 In order to let _maven-release-plugin_ push changes to your Git server you have to connect your docker container runtime with Git server. This can be done via [SSH](https://help.github.com/en/articles/connecting-to-github-with-ssh):
 * deploy your public key to GIT server.
 * normally private key will be available under ```~/.ssh/id_rsa```
-* build docker image ```docker build -t maven-git:3-alpine -f Dockerfile .```. Make sure private key was added to ```/root/.ssh/id_rsa``` 
+* build docker image ```docker build -t git-maven:3-alpine -f Dockerfile .``` Make sure private key was added to ```/root/.ssh/id_rsa``` 
 
 Now your newly built docker image is ready to release projects via _maven-release-plugin_. 
 Appropriate Jenkins Pipeline might look like :
