@@ -1,4 +1,4 @@
-# maven-git-3-alpine-docker-image
+# maven-3-git-alpine-docker-image
 Docker image that might be used by CI/CD servers to execute the release of project artifacts [by maven-release-plugin].  
 
 *Motivation*
@@ -34,7 +34,7 @@ Appropriate Jenkins Pipeline might look like :
 pipeline {
     agent {
         docker {
-            image 'maven-git:3-alpine'
+            image 'git-maven:3-alpine'
             args '-v /root/.m2:/root/.m2 --network=host'
         }
     }
